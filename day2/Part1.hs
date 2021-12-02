@@ -2,26 +2,30 @@ module Main where
 
 import Text.Parsec
 
+data Dir = Forward | Down | Up deriving (Show,Eq)
+
 main = do
   txt <- readFile "input.txt"
-  putStrLn txt
   let (Right dirs) = parse parser "" txt
-  print dirs
   let pos = calcPos dirs
   print pos
 
 calcPos = uncurry (*) . foldr (\(dir,n) (h,d) -> case dir of
-                     "forward" -> (h+n,d)
-                     "down" -> (h,d+n)
-                     "up" -> (h,d-n)) (0,0)
+                     Forward -> (h+n,d)
+                     Down -> (h,d+n)
+                     Up -> (h,d-n)) (0,0)
 
-parser :: Parsec String () [(String,Int)]
+parser :: Parsec String () [(Dir,Int)]
 parser = do
   (do
-    dir <- many1 letter
+    dir <- getDir <$> many1 letter
     space
     n <- number
     return (dir,n)) `sepEndBy` newline
 
 number = read <$> many1 digit
---number = many1 digit
+
+getDir "forward" = Forward
+getDir "down" = Down
+getDir "up" = Up
+getDir s = error $ "Invalid direction specified: " ++ s
