@@ -7,19 +7,20 @@ Feel free to check out my [2020 repo](https://github.com/DestyNova/advent_of_cod
 ## Current code stats with [cloc](https://github.com/AlDanial/cloc)
 
 ```
-       8 text files.
-       8 unique files.
-       4 files ignored.
 
-github.com/AlDanial/cloc v 1.86  T=0.01 s (712.8 files/s, 11404.2 lines/s)
+      21 text files.
+      20 unique files.                              
+      11 files ignored.
+
+github.com/AlDanial/cloc v 1.86  T=0.01 s (806.7 files/s, 14226.9 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Markdown                         2              9              0             45
-Haskell                          2              5              0             19
+Haskell                          6             30              0            106
+Markdown                         4             15              0             41
 Bourne Shell                     1              0              0              2
 -------------------------------------------------------------------------------
-SUM:                             5             14              0             66
+SUM:                            11             45              0            149
 -------------------------------------------------------------------------------
 ```
 
