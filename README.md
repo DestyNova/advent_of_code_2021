@@ -27,3 +27,5 @@ SUM:                            11             45              0            149
 ## Retrospectives
 
 * Day 1: [Sonar Sweep](https://github.com/DestyNova/advent_of_code_2021/blob/main/day1/retro.md)
+* Day 2: [Dive!](https://github.com/DestyNova/advent_of_code_2021/blob/main/day2/retro.md)
+* Day 3: [Binary Diagnostic](https://github.com/DestyNova/advent_of_code_2021/blob/main/day3/retro.md)
