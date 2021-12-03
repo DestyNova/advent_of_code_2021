@@ -5,9 +5,7 @@ import Data.List (transpose)
 main = do
   txt <- lines <$> readFile "input.txt"
   let oxygen = fromBinary $ head $ filterValues (>=) 0 txt
-  print oxygen
   let scrubber = fromBinary $ head $ filterValues (<) 0 txt
-  print scrubber
   let lifeSupport = oxygen*scrubber
   print lifeSupport
 
