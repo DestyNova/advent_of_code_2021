@@ -9,8 +9,6 @@ main = do
   let lifeSupport = oxygen * scrubber
   print lifeSupport
 
-calcOxygen = filterValues (>=) 0
-
 filterValues p i xs | i >= length (head xs) = xs
                     | length xs == 1 = xs
                     | otherwise = filterValues p (i+1) xs'
