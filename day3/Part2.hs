@@ -6,7 +6,7 @@ main = do
   txt <- lines <$> readFile "input.txt"
   let oxygen = fromBinary $ head $ filterValues (>=) 0 txt
   let scrubber = fromBinary $ head $ filterValues (<) 0 txt
-  let lifeSupport = oxygen*scrubber
+  let lifeSupport = oxygen * scrubber
   print lifeSupport
 
 calcOxygen = filterValues (>=) 0
