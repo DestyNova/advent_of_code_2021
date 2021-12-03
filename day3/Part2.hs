@@ -1,7 +1,5 @@
 module Main where
 
-import Data.List (transpose)
-
 main = do
   txt <- lines <$> readFile "input.txt"
   let oxygen = fromBinary $ head $ filterValues (>=) 0 txt
