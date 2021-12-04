@@ -42,10 +42,10 @@ number = read <$> many1 digit
 parseBoard :: Parsec String () Board
 parseBoard = many1 $ do
   nums <- try (do
-             many spaceChars
-             xs <- number `sepEndBy1` (many1 spaceChars)
+             many spaceChar
+             xs <- number `sepEndBy1` (many1 spaceChar)
              newline
              return xs)
   return nums
 
-spaceChars = char ' '
+spaceChar = char ' '
