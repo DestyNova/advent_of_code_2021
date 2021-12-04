@@ -32,7 +32,7 @@ parser = do
   newline
   newline
   boards <- parseBoard `sepBy1` newline
-  return (nums, map (filter (not . null)) boards) -- why?
+  return (nums, boards)
 
 number :: Parsec String () Int
 number = read <$> many1 digit
