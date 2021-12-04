@@ -18,7 +18,7 @@ runGame _ [] _ _ = error "Ran out of numbers."
 runGame boards (x:xs) called winsLeft = case (winsLeft, winner) of
                                              (_,[])  -> runGame boards xs (x:called) winsLeft
                                              (1,[w]) -> (concat w \\ (x:called), x)
-                                             (_,ws) -> runGame (removeWinners ws boards) xs (x:called) (winsLeft - length ws)
+                                             (_,ws)  -> runGame (removeWinners ws boards) xs (x:called) (winsLeft - length ws)
   where winner = filter (isWinner (x:called)) boards
         removeWinners ws b = b \\ ws
 
