@@ -1,7 +1,7 @@
 module Main where
 
 import Text.Parsec
-import Data.List ((\\), transpose, intercalate)
+import Data.List ((\\), transpose)
 
 type Board = [[Int]]
 
