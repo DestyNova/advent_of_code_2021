@@ -7,15 +7,15 @@ Feel free to check out my [2020 repo](https://github.com/DestyNova/advent_of_cod
 ## Current code stats with [cloc](https://github.com/AlDanial/cloc)
 
 ```
-github.com/AlDanial/cloc v 1.86  T=0.01 s (2423.1 files/s, 56890.5 lines/s)
+github.com/AlDanial/cloc v 1.86  T=0.02 s (1510.2 files/s, 35350.6 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Haskell                         14             92              3            307
-Markdown                         8             39              0             97
-Bourne Shell                     1              0              0              2
+Haskell                         16            108             12            362
+Markdown                         9             42              0            103
+Bourne Shell                     2              1              0              4
 -------------------------------------------------------------------------------
-SUM:                            23            131              3            406
+SUM:                            27            151             12            469
 -------------------------------------------------------------------------------
 
 ```
@@ -29,3 +29,4 @@ SUM:                            23            131              3            406
 * Day 5: [Hydrothermal Venture](https://github.com/DestyNova/advent_of_code_2021/blob/main/day5/retro.md)
 * Day 6: [Lanternfish](https://github.com/DestyNova/advent_of_code_2021/blob/main/day6/retro.md)
 * Day 7: [The Treachery of Whales](https://github.com/DestyNova/advent_of_code_2021/blob/main/day7/retro.md)
+* Day 8: [Seven Segment Search](https://github.com/DestyNova/advent_of_code_2021/blob/main/day8/retro.md)
