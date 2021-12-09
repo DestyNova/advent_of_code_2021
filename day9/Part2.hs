@@ -8,8 +8,7 @@ type HeightMap = [[Int]]
 main = do
   txt <- readFile "input.txt"
   let (Right inp) = parse parser "" txt
-  let lowPoints = getLowPoints inp
-  print $ product $ take 3 $ sortBy (flip compare) lowPoints
+  print $ product $ take 3 $ sortBy (flip compare) $ getLowPoints inp
 
 getLowPoints xs = [getBasinSize (getFlowPoints xs x y w h p) | x <- [0..w-1], y <- [0..h-1],
                          let neighbours = getNeighbours x y w h,
