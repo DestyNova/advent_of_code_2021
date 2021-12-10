@@ -3,8 +3,6 @@ module Main where
 import Text.Parsec
 import Data.List ((\\), transpose)
 
-type HeightMap = [[Int]]
-
 main = do
   txt <- readFile "input.txt"
   let (Right inp) = parse parser "" txt
@@ -25,7 +23,7 @@ getNeighbours x y w h = [(x',y') | (i,j) <- [(-1,0),(0,-1),(1,0),(0,1)],
                                    y' >= 0 && y' < h
                         ]
 
-parser :: Parsec String () HeightMap
+parser :: Parsec String () [[Int]]
 parser =
   many1 (read . (:[]) <$> digit) `sepEndBy1` newline
 
