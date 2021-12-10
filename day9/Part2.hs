@@ -3,8 +3,6 @@ module Main where
 import Text.Parsec
 import Data.List (nub, sortBy)
 
-type HeightMap = [[Int]]
-
 main = do
   txt <- readFile "input.txt"
   let (Right inp) = parse parser "" txt
@@ -39,7 +37,7 @@ getFlowPoints xs x y w h currentHeight | currentHeight >= 8 = []
                                                then getFlowPoints xs i j w h nHeight
                                                else []) neighbourCoords neighbours
 
-parser :: Parsec String () HeightMap
+parser :: Parsec String () [[Int]]
 parser =
   many1 (read . (:[]) <$> digit) `sepEndBy1` newline
 
