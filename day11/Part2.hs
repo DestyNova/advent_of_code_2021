@@ -12,19 +12,19 @@ main = do
   txt <- readFile "input.txt"
   let (Right inp) = parse parser "" txt
   let g = transpose inp
-  print $ run g 100
+  print $ run g
 
 gridToMap g = M.fromList [((i,j), g !! j !! i) | i <- [0..w-1], j <- [0..h-1]]
   where w = length (head g)
         h = length g
 
-run g n = run' (gridToMap g) n w h 0
+run g = run' (gridToMap g) 0 w h 0
   where w = length (head g)
         h = length g
 
 run' :: Grid -> Int -> Int -> Int -> Int -> Int
-run' grid 0 _ _ flashes = flashes
-run' grid n w h flashes = run' g' (n-1) w h flashes'
+run' grid n w h flashes | allZeroes grid = n
+                        | otherwise = run' g' (n+1) w h flashes'
   where flashes' = flashes + M.size (M.filter (>9) flashed)
         incremented = step grid
         flashed = doFlashes incremented w h []
@@ -32,6 +32,8 @@ run' grid n w h flashes = run' g' (n-1) w h flashes'
 
 step = M.map succ
 reset = M.map (\i -> if i > 9 then 0 else i)
+
+allZeroes g = M.size (M.filter (/=0) g) == 0
 
 doFlashes :: Grid -> Int -> Int -> [Coord] -> Grid
 doFlashes g w h toFlash = g'
