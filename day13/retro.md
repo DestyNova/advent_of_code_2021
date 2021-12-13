@@ -23,3 +23,17 @@ Eventually I got the sample input producing the correct result, but the full inp
 ## Part 2
 
 Thanks to the debugging step at the end of part 1, this was a trivial addition -- I was already truncating the output with `(take 1 folds)` in part 1, so this just needed to be replaced with `folds` and the final output became visible. This little visual twist in part 2 was a lovely way to end today's challenge -- hopefully we can get some more tricks like that in future puzzles.
+
+## Reflections
+
+* Have to decide early on how best to represent the grid:
+  * Pay the performance tax on using lists?
+  * Use `Map (Int,Int) Char`?
+    * Probably more suitable for sparse grids, as in this case.
+      * But would have to manually update indices during a fold, rather than (ab)using `reverse`.
+  * Use `UArray`?
+    * Feels cumbersome in Haskell, but probably a lot more efficient than lists, and maps too depending on sparsity.
+  * Use `STUArray`?
+    * I literally couldn't figure out how to work with these last time. Like, I could work with it, but introspecting the grid for debugging proved beyond my brain capacity, producing output like `<ST action>`.
+* It's probably better to pause for a minute or two and think, rather than rushing into a decision just because the clock is ticking.
+  * This seems to be a general thing that I've failed to learn from the previous challenges where it was also true.
