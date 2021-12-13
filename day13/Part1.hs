@@ -1,7 +1,7 @@
 module Main where
 
 import Text.Parsec
-import Data.List ((\\), sort, transpose, intercalate)
+import Data.List (sort, intercalate)
 
 data Fold = FoldUp Int | FoldLeft Int deriving (Eq, Show)
 type Coord = (Int,Int)
@@ -12,7 +12,6 @@ main = do
   let (Right (coords,folds)) = parse parser "" txt
   print folds
   let g = makeGrid coords
-  --print g
   let g' = solve g (take 1 folds)
   --putStrLn $ printGrid g'
   print $ countDots g'
