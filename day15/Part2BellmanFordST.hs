@@ -21,7 +21,7 @@ type Weights = A.Array (Int,Int) Int
 data Heap = Node Int Int Heap Heap | NoNode deriving (Eq,Show)
 
 main = do
-  inp <- lines <$> readFile "sample.txt"
+  inp <- lines <$> readFile "input.txt"
   let w = length (head inp) * 5
   let h = length inp * 5
   let g = parseInts inp
@@ -54,14 +54,13 @@ solve2' ws ds vs w h = do
                       let ns = getNeighbours v w h
                         in (do
                            newDs <- catMaybes <$> mapM (readNeighbour ws ds v) ns
-                           mapM (\(u,ud') -> writeArray ds u ud') newDs
-                           return $ updated || (not $ null newDs)))
+                           mapM_ (uncurry (writeArray ds)) newDs
+                           return $ updated || not (null newDs)))
                            False vs
 
-  if (not update')
+  if not update'
      then do
-       res <- readArray ds (w-1,h-1)
-       return res
+       readArray ds (w-1,h-1)
      else do
        solve2' ws ds vs w h
 
