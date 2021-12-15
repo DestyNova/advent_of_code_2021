@@ -7,7 +7,6 @@ module Main where
 -- least 3 or 4 orders of magnitude. Imperative Haskell FTW!
 
 import Text.Parsec
-import Debug.Trace (trace)
 import Data.List (transpose)
 import Data.Maybe (catMaybes)
 import qualified Data.Array.Unboxed as A

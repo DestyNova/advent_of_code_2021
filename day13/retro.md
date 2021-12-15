@@ -1,5 +1,5 @@
-# Day 13: [Transparent Origami](https://adventofcode.com/2021/day/9)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day9/Part1.hs) (00:57:42, rank 6230)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day9/Part2.hs) (00:59:20, rank 5071)*
+# Day 13: [Transparent Origami](https://adventofcode.com/2021/day/13)
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day13/Part1.hs) (00:57:42, rank 6230)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day13/Part2.hs) (00:59:20, rank 5071)*
 
 Another poor performance from me, but I really enjoyed the backstory and the puzzle itself.
 
