@@ -20,14 +20,6 @@ As I started to look back at the top level `solve` function, I realised that my 
 
 ## Reflections
 
-* Have to decide early on how best to represent the grid:
-  * Pay the performance tax on using lists?
-  * Use `Map (Int,Int) Char`?
-    * Probably more suitable for sparse grids, as in this case.
-      * But would have to manually update indices during a fold, rather than (ab)using `reverse`.
-  * Use `UArray`?
-    * Feels cumbersome in Haskell, but probably a lot more efficient than lists, and maps too depending on sparsity.
-  * Use `STUArray`?
-    * I literally couldn't figure out how to work with these last time. Like, I could work with it, but introspecting the grid for debugging proved beyond my brain capacity, producing output like `<ST action>`.
-* It's probably better to pause for a minute or two and think, rather than rushing into a decision just because the clock is ticking.
-  * This seems to be a general thing that I've failed to learn from the previous challenges where it was also true.
+When mystified by an error, it's probably a good idea to consider which parts of the spec you found vague or confusing. In my case, my spidey sense was tingling a little when I read the part about subpackets taking a fixed number of bits. The part 1 description mentioned something ignoring zero bits at the end of a literal, so I might have allowed that phrase to colour my judgement later.
+
+But certainly, when I was knee deep in `Debug.Trace` and trying to manually parse the input to see where my program started to go wrong, this would have been a good time to take 5 minutes and go back over parts of the problem I felt unsure about, and the variable-length subpacket consumption was one of them. Once I paid attention to that at the end, it only took a few minutes to see why it wasn't behaving as intended and fix the problem.
