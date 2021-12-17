@@ -16,3 +16,4 @@ Sounds simple when you say it.
 ## Reflections
 
 * Again, thinking things through more carefully at the beginning and maybe drawing something on paper would have revealed that I needed to just figure out the y situation first.
+* Also, as demonstrated in my summary of part 2, pausing and speaking out loud what I'm trying to achieve can be more effective than [hacker typing](https://hackertyper.net).
