@@ -47,7 +47,7 @@ This sped the program up to a ridiculous 1 second runtime, about 3.3x faster tha
 
 __Several minutes later__
 
-It's a tiny bit faster, maybe 100ms shaved off -- but it's close that I'm measuring noise at this point.
+It's a tiny bit faster, maybe 100ms shaved off -- but it's so close that I'm measuring noise at this point.
 
 ## Performance of the different implementations
 
