@@ -10,11 +10,11 @@ Feel free to check out my [2020 repo](https://github.com/DestyNova/advent_of_cod
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Haskell                         34            304             42           1185
-Markdown                        17            124              0            247
+Haskell                         36            325             42           1266
+Markdown                        18            133              0            249
 Bourne Shell                     3              1              2              6
 -------------------------------------------------------------------------------
-SUM:                            54            429             44           1438
+SUM:                            57            459             44           1521
 -------------------------------------------------------------------------------
 ```
 
@@ -36,3 +36,4 @@ SUM:                            54            429             44           1438
 * Day 14: [Extended Polymerization](https://github.com/DestyNova/advent_of_code_2021/blob/main/day14/retro.md)
 * Day 15: [Chiton](https://github.com/DestyNova/advent_of_code_2021/blob/main/day15/retro.md)
 * Day 16: [Packet Decoder](https://github.com/DestyNova/advent_of_code_2021/blob/main/day16/retro.md)
+* Day 17: [Trick Shot](https://github.com/DestyNova/advent_of_code_2021/blob/main/day17/retro.md)
