@@ -39,6 +39,16 @@ So I abandoned that thought there and went shopping. After I returned, the spiri
 
 When I ran it on the full input data, it produced the correct result again, in a delightful time of 3.3 seconds. That's 175 times faster than my Djikstra implementation with leftist heaps. Wow.
 
+## Addendum, 2 days later
+
+A very good Haskell coder in the "Dublin Haskell Meetup" Discord suggested that `Data.Set` has some very efficient operations, including `minView` which would allow to easily serve as a priority queue. This was a great idea, so I implemented it, but found that it was still slow on the full input set. This seemed like a good time to introduce `ST` to the mix, replacing the `UArray` of distances with a `STUArray` and mutating it rather than creating and throwing away new array copies on every iteration.
+
+This sped the program up to a ridiculous 1 second runtime, about 3.3x faster than the Bellman-Ford ST solution. Now I want to try reintroducing leftist heaps to see if it's the same or what.
+
+__Several minutes later__
+
+It's a tiny bit faster, maybe 100ms shaved off -- but it's close that I'm measuring noise at this point.
+
 ## Reflections
 
 * Once again, if you expect to do an absolute ton of updates, get comfortable with the `ST` monad. It might literally be tens of thousands of times faster than generating and throwing away copies of huge arrays in a tight loop.
