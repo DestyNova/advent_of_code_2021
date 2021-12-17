@@ -15,5 +15,11 @@ Sounds simple when you say it.
 
 ## Reflections
 
-* Again, thinking things through more carefully at the beginning and maybe drawing something on paper would have revealed that I needed to just figure out the y situation first.
-* Also, as demonstrated in my summary of part 2, pausing and speaking out loud what I'm trying to achieve can be more effective than [hacker typing](https://hackertyper.net).
+### Rubber duck it
+
+As demonstrated in my summary of part 2, pausing and speaking out loud what I'm trying to achieve can be more effective than [hacker typing](https://hackertyper.net).
+
+### Start by looking at very simple special cases
+
+I was explaining the puzzle to someone afterwards, and it got confusing pretty quickly, so I started dealing with the special case where the target is a 1x1 square at x=0,y=-2.
+Ignoring the role of x made it much easier to understand the behaviour for y, and we were able to draw the sequence of y positions over several timesteps for various initial velocity values.
