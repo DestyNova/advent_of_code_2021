@@ -49,6 +49,16 @@ __Several minutes later__
 
 It's a tiny bit faster, maybe 100ms shaved off -- but it's close that I'm measuring noise at this point.
 
+## Performance of the different implementations
+
+| Algorithm    | Data representations                                                  | Runtime      |
+|--------------|-----------------------------------------------------------------------|--------------|
+| Djikstra     | immutable Data.Map for distance table + vanilla lists as vertex queue | 2 hours      |
+| Djikstra     | immutable array for distance table + binary heap as vertex queue      | 10 minutes   |
+| Bellman-Ford | mutable arrays for everything                                         | 3.3 seconds  |
+| Djikstra     | mutable array for distance table + sets as vertex queue               | 1 second     |
+| Djikstra     | mutable array for distance table + binary heap as vertex queue        | 0.95 seconds |
+
 ## Reflections
 
 * Once again, if you expect to do an absolute ton of updates, get comfortable with the `ST` monad. It might literally be tens of thousands of times faster than generating and throwing away copies of huge arrays in a tight loop.
