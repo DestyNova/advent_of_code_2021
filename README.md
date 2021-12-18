@@ -10,11 +10,11 @@ Feel free to check out my [2020 repo](https://github.com/DestyNova/advent_of_cod
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Haskell                         36            325             42           1266
-Markdown                        18            133              0            249
+Haskell                         40            397             51           1525
+Markdown                        19            156              0            284
 Bourne Shell                     3              1              2              6
 -------------------------------------------------------------------------------
-SUM:                            57            459             44           1521
+SUM:                            62            554             53           1815
 -------------------------------------------------------------------------------
 ```
 
@@ -37,3 +37,4 @@ SUM:                            57            459             44           1521
 * Day 15: [Chiton](https://github.com/DestyNova/advent_of_code_2021/blob/main/day15/retro.md)
 * Day 16: [Packet Decoder](https://github.com/DestyNova/advent_of_code_2021/blob/main/day16/retro.md)
 * Day 17: [Trick Shot](https://github.com/DestyNova/advent_of_code_2021/blob/main/day17/retro.md)
+* Day 18: [Snailfish](https://github.com/DestyNova/advent_of_code_2021/blob/main/day18/retro.md)
