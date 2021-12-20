@@ -7,8 +7,6 @@ data SnailNum = Pair SnailNum SnailNum | RegNum Int deriving (Eq,Show)
 main = do
   txt <- getContents
   let (Right nums) = parse parser "" txt
-  print nums
-  putStrLn "--------"
   print $ solve nums
 
 magnitude (Pair a b) = 3 * magnitude a + 2 * magnitude b
