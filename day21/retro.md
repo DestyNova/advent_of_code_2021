@@ -11,7 +11,8 @@ This part was fairly simple once I wrapped my head around how the rolls should p
 
 The awkward part was doing DP in Haskell with maps. AFAIK there's no mutable maps/dicts in the standard library which is a bit of a bummer, so I had to just pass the maps around and union them together. This was pretty wasteful so the solution took about 6 minutes on the full input.
 
-I'm reimplementing it in Python with mutable dicts to see how much quicker that is.
+Out of curiosity, I reimplemented it in Python, which was actually a bit awkward to write in slightly more imperative form, but unsurprisingly it was much faster using mutable dicts -- it produced the correct answer in 145 ms, about 2400 times faster than the Haskell version using immutable maps. Pity there's no mutable `ST` maps in the standard library.
 
 ## Reflections
 
+Mutability is king again. Also, learn to love dynamic programming and recognise when it'll be needed.
