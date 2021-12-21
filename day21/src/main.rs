@@ -78,19 +78,3 @@ fn solve(
 fn update_p(p: usize, d: usize) -> usize {
     (((p - 1) + d) % 10) + 1
 }
-/*
-
-
-def solve(p1,p2,s1,s2,turn):
-turnb = not turn
-(w1,w2) = solve(p1b,p2b,s1b,s2b,turnb)
-p1w += m*w1
-p2w += m*w2
-dp[(p1b,p2b,s1b,s2b,turnb)] = (w1,w2)
-return (p1w,p2w)
-
-return w
-
-(a,b) = solve(p1s,p2s,0,0,True)
-print(max(a,b))
-*/
