@@ -1,7 +1,6 @@
 module Main where
 
 import Text.Parsec
-import Data.List (sort, intercalate)
 
 main = do
   txt <- readFile "input.txt"
@@ -10,8 +9,6 @@ main = do
 
 solve p1 p2 = solve' p1 p2 0 0 0
 
--- solve' p1 p2 s1 s2 d | s1 >= 1000 = (p1,p2,s1,s2,d)
---                      | s2 >= 1000 = (p1,p2,s1,s2,d)
 solve' p1 p2 s1 s2 d | s1 >= 1000 = d * s2
                      | s2 >= 1000 = d * s1
                      | otherwise = solve' p1' p2' s1' s2' d'
