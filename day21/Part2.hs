@@ -47,9 +47,6 @@ parser = do
   p2 <- parsePlayer
   return (p1,p2)
 
-fac 1 = 1
-fac n = n * fac (n-1)
-
 parsePlayer = do
   string "Player "
   number
