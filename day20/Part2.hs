@@ -9,7 +9,6 @@ main = do
   txt <- readFile "input.txt"
   let (Right (alg,g)) = parse parser "" txt
   let g' = run alg g 50
-  putStrLn $ "d: " ++ show (length g')
   print $ pixelCount g'
 
 run alg g n = run' alg g n True
