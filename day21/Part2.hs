@@ -40,15 +40,6 @@ rolls = map (\xs -> (genericLength xs,head xs)) $ group $ sort [a+b+c | let d = 
 
 addWins (a1,a2) m (b1,b2) = (a1+m*b1,a2+m*b2)
 
-solvex' p1 p2 s1 s2 d | s1 >= 2 = (1,0)
-                     | s2 >= 2 = (0,1)
-                     | otherwise = solvex' p1' p2' s1' s2' d'
-  where p1' = (((p1-1) + d) `mod` 10) + 1
-        p2' = (((p2-1) + 3*(d+3) + 6) `mod` 10) + 1
-        s1' = s1 + p1'
-        s2' = if s1' >= 1000 then s2 else s2 + p2'
-        d' = if s1' >= 1000 then d+3 else d+6
-
 parser :: Parsec String () (Integer,Integer)
 parser = do
   p1 <- parsePlayer
