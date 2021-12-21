@@ -1,10 +1,9 @@
 module Main where
 
 import Text.Parsec
-import Data.List (group, sort, intercalate, genericLength, foldl')
+import Data.List (group, sort, genericLength, foldl')
 import qualified Data.Map as M
 import Data.Map (Map)
-import Debug.Trace (trace)
 
 type Table = Map (Integer,Integer,Integer,Integer,Bool) (Integer,Integer)
 
@@ -17,34 +16,11 @@ solve :: Integer -> Integer -> Integer
 solve p1 p2 = let ((u1,u2),_) = solve' p1 p2 0 0 True mempty
                   in max u1 u2
 
--- use DP to cache the number of wins for each player for given values of (p1,p2,s1,s2,d)?
--- how do you combine those values though?
---
--- maybe solve naievely first for w = score >= 2
---
--- wins = p1 rolls 1, 1 + p1 r 1, 2 + p1 r 1,3 + p1 r 2 + p1 r 3
---      = (5,0)
---
--- for w = score >= 4
---
--- wins = wins where p1 rolls 1 on t1 + ww p1 rolls 2 on t1 + ww p1 rolls 3 on t1
---      = (p1 rolls 1 on t1 && (p1 rolls 1 on t2 + 
--- solve' p1 p2 s1 s2 d | s1 >= 1000 = (p1,p2,s1,s2,d)
---                      | s2 >= 1000 = (p1,p2,s1,s2,d)
--- want to say "number of wins where s1 == 0, s2 == 0, p1 == X. p2 == Y, turn == 0, rolled a 1"
--- turn 0: 1
--- t 1: 1
--- t 2: 1
--- solve' p1 p2 s1 s2 turn | trace ("solve' " ++ show (p1,p2,s1,s2,turn)) False = undefined
--- win at >=5 = (4383,324)
--- win at >=13 = (152998146,5950827) -- 0.01s
 solve' :: Integer -> Integer -> Integer -> Integer -> Bool -> Table -> ((Integer, Integer), Table)
--- solve' p1 p2 s1 s2 turn dp | trace ("solve' " ++ show (p1,p2,s1,s2,turn,M.size dp)) False = undefined
 solve' p1 p2 s1 s2 turn dp | s1 >= 21 = ((1,0),dp)
                            | s2 >= 21 = ((0,1),dp)
                            | otherwise = case M.lookup (p1,p2,s1,s2,turn) dp of
                                               Just w -> (w,dp)
-                                              --Nothing -> (addWins w1 w2 w3, foldl1 M.union [dp1,dp2,dp3])
                                               Nothing -> (wUpdated, dpUpdated)
   where (wUpdated, dpUpdated) = foldl' (\(wAcc,dpAcc) (m,i) ->
                                        let (w,dp') = update i dpAcc
@@ -62,7 +38,6 @@ solve' p1 p2 s1 s2 turn dp | s1 >= 21 = ((1,0),dp)
 
 rolls = map (\xs -> (genericLength xs,head xs)) $ group $ sort [a+b+c | let d = [1,2,3], a <- d, b <- d, c <- d]
 
--- addWins a b c | trace ("addWins " ++ show (a,b,c)) False = undefined
 addWins (a1,a2) m (b1,b2) = (a1+m*b1,a2+m*b2)
 
 solvex' p1 p2 s1 s2 d | s1 >= 2 = (1,0)
