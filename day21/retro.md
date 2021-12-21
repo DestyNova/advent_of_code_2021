@@ -15,4 +15,5 @@ Out of curiosity, I reimplemented it in Python, which was actually a bit awkward
 
 ## Reflections
 
-Mutability is king again. Also, learn to love dynamic programming and recognise when it'll be needed.
+* Mutability is king again. Also, learn to love dynamic programming and recognise when it'll be needed.
+* Maybe there's a better way to do DP with a non-integer key in Haskell, but I'm not sure. Tikhon Jelvis has a cool article about a [lazy dynamic programming technique](https://jelv.is/blog/Lazy-Dynamic-Programming/) which I've used before, but it only really works where you can enumerate different values of the argument (e.g. "the nth Fibonacci number"). In this case I'm storing a tuple containing the complete game state (player 1 position, player 2 position, player 1 score, player 2 score and a flag indicating whether it's currently player 1's turn).
