@@ -10,12 +10,14 @@ Feel free to check out my [2020 repo](https://github.com/DestyNova/advent_of_cod
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Haskell                         45            481             82           1805
-Markdown                        22            181              0            322
+Haskell                         47            514             86           1933
+Markdown                        23            193              0            354
+Rust                             1             15             12             69
 Python                           1             11              0             37
 Bourne Shell                     3              1              2              6
+TOML                             1              2              1              5
 -------------------------------------------------------------------------------
-SUM:                            71            674             84           2170
+SUM:                            76            736            101           2404
 -------------------------------------------------------------------------------
 ```
 
@@ -42,3 +44,4 @@ SUM:                            71            674             84           2170
 * Day 19: [Beacon Scanner](https://github.com/DestyNova/advent_of_code_2021/blob/main/day19/retro.md)
 * Day 20: [Trench Map](https://github.com/DestyNova/advent_of_code_2021/blob/main/day20/retro.md)
 * Day 21: [Dirac Dice](https://github.com/DestyNova/advent_of_code_2021/blob/main/day21/retro.md)
+* Day 22: [Reactor Reboot](https://github.com/DestyNova/advent_of_code_2021/blob/main/day22/retro.md)
