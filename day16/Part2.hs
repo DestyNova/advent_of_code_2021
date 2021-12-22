@@ -14,7 +14,6 @@ solve (v1:v2:v3:t1:t2:t3:xs) totalBits =
   case totalBits of
        Just k | k > bitsParsed -> let (recSolve, recXs) = solve xs' (Just $ k - bitsParsed)
                                       in (solvedInner : recSolve, recXs)
-       Just k | k > bitsParsed -> error ("Parsed too many bits: " ++ show (bitsParsed,k))
        _ -> ([solvedInner], xs')
   where version = bin2dec [v1,v2,v3]
         typeId = bin2dec [t1,t2,t3]
