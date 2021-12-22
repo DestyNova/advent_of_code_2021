@@ -18,11 +18,11 @@ What I came up with in the end might not be super elegant but it worked:
     * I think there's a function that does this in Haskell, but I couldn't remember it so just applied min and max separately.
   2. For "off" flips, it gets very interesting. I sat and looked at a Rubik's cube for a while, then wrote down some equations to remove a region `d` from another region `r` by removing `r` from the region list and inserting 6 new regions:
     1. Everything in `r` to the left of `d`.
-    1. Everything in `r` to the right of `d`.
-    1. Everything in `r` above `d` and within its `x` range.
-    1. Everything in `r` below `d` and within its `x` range.
-    1. Everything in `r` in front of `d` and within its `x` and `y` ranges.
-    1. Everything in `r` behind `d` and within its `x` and `y` ranges.
+    2. Everything in `r` to the right of `d`.
+    3. Everything in `r` above `d` and within its `x` range.
+    4. Everything in `r` below `d` and within its `x` range.
+    5. Everything in `r` in front of `d` and within its `x` and `y` ranges.
+    6. Everything in `r` behind `d` and within its `x` and `y` ranges.
   3. Note that the delete operation needs to apply to every region in the original list since there may be multiple overlapping regions. So this could generate thousands of new subregions.
 2. When all flips are performed, recurse over the remaining region list and count from 0.
   1. If there are no more regions, return the count.
