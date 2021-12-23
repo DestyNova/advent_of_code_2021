@@ -10,14 +10,14 @@ Feel free to check out my [2020 repo](https://github.com/DestyNova/advent_of_cod
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Haskell                         47            514             86           1933
-Markdown                        23            193              0            354
-Rust                             1             15             12             69
+Haskell                         52            638             91           2510
+Markdown                        24            212              0            384
+Rust                             1             11              0             69
 Python                           1             11              0             37
 Bourne Shell                     3              1              2              6
 TOML                             1              2              1              5
 -------------------------------------------------------------------------------
-SUM:                            76            736            101           2404
+SUM:                            82            875             94           3011
 -------------------------------------------------------------------------------
 ```
 
@@ -45,3 +45,4 @@ SUM:                            76            736            101           2404
 * Day 20: [Trench Map](https://github.com/DestyNova/advent_of_code_2021/blob/main/day20/retro.md)
 * Day 21: [Dirac Dice](https://github.com/DestyNova/advent_of_code_2021/blob/main/day21/retro.md)
 * Day 22: [Reactor Reboot](https://github.com/DestyNova/advent_of_code_2021/blob/main/day22/retro.md)
+* Day 23: [Amphipod](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/retro.md)
