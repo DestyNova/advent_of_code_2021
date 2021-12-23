@@ -1,5 +1,7 @@
 module Main where
 
+-- I didn't get this approach working at all. Might come back to this when I'm less tired and frustrated.
+
 import Data.List (sort, intercalate, nub)
 import Data.Map (Map, (!), (\\))
 import qualified Data.Map as M
