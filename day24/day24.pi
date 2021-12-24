@@ -3,7 +3,6 @@ import util.
 
 main =>
   go(Total),
-  writeln('----'),
   writeln(Total).
 
 go(Total) =>
@@ -16,14 +15,10 @@ go(Total) =>
   Total #= A*10**13 + B*10**12 + C*10**11 + D*10**10 + E*10**9 + F*10**8 + G*10**7 + H*10**6 + I*10**5 + J*10**4 + K*10**3 + L*10**2 + M*10**1 + N,
 
   % solve([$max(Total), $report(printf("Z14=%d  Total=%w%n", Z14, Total))], Vars), % Part 1
-  solve([$min(Total), $report(printf("Z14=%d  Total=%w%n", Z14, Total))], Vars), % Part 2
-
-  writeln(Z14).
+  solve([$min(Total), $report(printf("Z14=%d  Total=%w%n", Z14, Total))], Vars). % Part 2
 
 checkW(A,B,C,D,E,F,G,H,I,J,K,L,M,N,Z14) =>
-  Z0 #= 0,
-
-  X1 #= cond((Z0 mod 26 + 15) #= A, 0, 1),
+  X1 #= cond(15 #= A, 0, 1),
   Z1 #=                      X1*(A + 15),
 
   X2 #= cond((Z1 mod 26 + 15) #= B, 0, 1),
