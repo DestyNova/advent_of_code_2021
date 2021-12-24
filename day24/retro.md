@@ -1,5 +1,5 @@
 # Day 24: [Arithmetic Logic Unit](https://adventofcode.com/2021/day/24)
-*Picat: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day24/Part1.hs) (13:25:16, rank 4399)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day24/Part2.hs) (13:26:57, rank 4270)*
+*Picat: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day24/day24.pi) (13:25:16, rank 4399)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day24/day24.pi) (13:26:57, rank 4270)*
 
 Another tough one! This time both parts were almost equivalent, unless you found a very specific solution to the maximisation of the 14-digit number in part 1.
 
