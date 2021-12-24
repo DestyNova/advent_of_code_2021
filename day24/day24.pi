@@ -1,0 +1,66 @@
+import sat.
+import util.
+
+main =>
+  go(Total),
+  writeln('----'),
+  writeln(Total).
+
+go(Total) =>
+  Vars = [A,B,C,D,E,F,G,H,I,J,K,L,M,N],
+  Vars :: 1..9,
+
+  checkW(A,B,C,D,E,F,G,H,I,J,K,L,M,N,Z14),
+  Z14 #= 0,
+
+  Total #= A*10**13 + B*10**12 + C*10**11 + D*10**10 + E*10**9 + F*10**8 + G*10**7 + H*10**6 + I*10**5 + J*10**4 + K*10**3 + L*10**2 + M*10**1 + N,
+
+  % solve([$max(Total), $report(printf("Z14=%d  Total=%w%n", Z14, Total))], Vars), % Part 1
+  solve([$min(Total), $report(printf("Z14=%d  Total=%w%n", Z14, Total))], Vars), % Part 2
+
+  writeln(Z14).
+
+checkW(A,B,C,D,E,F,G,H,I,J,K,L,M,N,Z14) =>
+  Z0 #= 0,
+
+  X1 #= cond((Z0 mod 26 + 15) #= A, 0, 1),
+  Z1 #=                      X1*(A + 15),
+
+  X2 #= cond((Z1 mod 26 + 15) #= B, 0, 1),
+  Z2 #= Z1 * (25 * X2 + 1) + X2*(B + 10),
+
+  X3 #= cond((Z2 mod 26 + 12) #= C, 0, 1),
+  Z3 #= Z2 * (25 * X3 + 1) + X3*(C + 2),
+
+  X4 #= cond((Z3 mod 26 + 13) #= D, 0, 1),
+  Z4 #= Z3 * (25 * X4 + 1) + X4*(D + 16),
+
+  X5 #= cond((Z4 mod 26 + (-12)) #= E, 0, 1),
+  Z5 #= (Z4 // 26) * (25 * X5 + 1) + X5*(E + 12),
+
+  X6 #= cond((Z5 mod 26 + 10) #= F, 0, 1),
+  Z6 #= Z5 * (25 * X6 + 1) + X6*(F + 11),
+
+  X7 #= cond((Z6 mod 26 + (-9)) #= G, 0, 1),
+  Z7 #= (Z6 // 26) * (25 * X7 + 1) + X7*(G + (5)),
+
+  X8 #= cond((Z7 mod 26 + 14) #= H, 0, 1),
+  Z8 #= Z7 * (25 * X8 + 1) + X8*(H + 16),
+
+  X9 #= cond((Z8 mod 26 + 13) #= I, 0, 1),
+  Z9 #= Z8 * (25 * X9 + 1) + X9*(I + 6),
+
+  X10 #= cond((Z9 mod 26 + (-14)) #= J, 0, 1),
+  Z10 #= (Z9 // 26) * (25 * X10 + 1) + X10*(J + 15),
+
+  X11 #= cond((Z10 mod 26 + (-11)) #= K, 0, 1),
+  Z11 #= (Z10 // 26) * (25 * X11 + 1) + X11*(K + 3),
+
+  X12 #= cond((Z11 mod 26 + (-2)) #= L, 0, 1),
+  Z12 #= (Z11 // 26) * (25 * X12 + 1) + X12*(L + (12)),
+
+  X13 #= cond((Z12 mod 26 + (-16)) #= M, 0, 1),
+  Z13 #= (Z12 // 26) * (25 * X13 + 1) + X13*(M + (10)),
+
+  X14 #= cond((Z13 mod 26 + (-14)) #= N, 0, 1),
+  Z14 #= (Z13 // 26) * (25 * X14 + 1) + X14 * (N + (13)).
