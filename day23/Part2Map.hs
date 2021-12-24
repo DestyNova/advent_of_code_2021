@@ -20,19 +20,19 @@ main = do
   print res
 
 solve :: Grid -> Int
-solve g = dfs (M.insert g 0 mempty) (initialQ g)
+solve g = dijkstra (M.insert g 0 mempty) (initialQ g)
 
 initialQ g = S.fromList [(0,g)]
 
 solved :: Grid
 solved = M.fromList [((i,j),c) | i <- [2,4,6,8], j <- [1..4], let c = "ABCD" !! ((i `div` 2) - 1)]
 
-dfs :: Table -> S.Set (Int,Grid) -> Int
-dfs ds q
+dijkstra :: Table -> S.Set (Int,Grid) -> Int
+dijkstra ds q
   | S.null q = case M.lookup solved ds of
                     Just c -> c
                     Nothing -> error $ "Nothing. " ++ show (M.size ds)
-  | otherwise = dfs ds' qUpdated
+  | otherwise = dijkstra ds' qUpdated
 
   where (v,q') = getClosest q
         ns = validMoves v

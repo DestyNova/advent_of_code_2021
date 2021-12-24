@@ -1,0 +1,170 @@
+z14 = 0 if digit in range [1..9] and z13 in range [15..23]...
+
+x = if (z `mod` 26 + c1) == w then 0 else 1
+z' = (z `div` 26) * (25 * x + 1) + x*(w + c2)
+
+-- last block
+
+w = digit
+c1 = -14,  c2 = 13
+
+x = if (z `mod` 26 - 14) == w then 0 else 1
+z' = (z `div` 26) * (25 * x + 1) + x*(w + 13)
+
+z' = 0, so...
+
+z `elem` [0..25]
+but also, x*(w+c2) == 0, and since c2 and w are positive, x must be 0
+z always positive
+> therefore z `mod` 26 + c1 == w
+> therefore z `mod` 26 == w - c1
+> therefore z `mod` 26 == w + 14
+> therefore z `elem [(1 + 14)..(9 + 14)]
+> since w in [1..9], z in [15..23]
+
+-- note, first 4 numbers don't divide z by 26
+-- 2nd last
+x = if (z `mod` 26 - 16) == w then 0 else 1
+z' = (z `div` 26) * (25 * x + 1) + x*(w + 10)
+
+assuming x needs to be zero every time, else the (25*x+1) term undoes the division and adds term.
+> but z' in [15..23]??
+
+> then, this iteration: (z `div` 26) `elem` [15..23]
+
+c1 = -16, c2 = 10
+
+> x = if z `mod` 26 == w + 16 then 0 else 1
+> x must be 0 (right?), so z `mod` 26 == w + 16
+>
+> since z' in [15..23], z in [390,416,442,468,494,520,546,572,598]
+> and z `mod` 26 in range [17..25]
+
+inp w
+mul x 0
+add x z
+mod x 26
+div z 26
+add x -16
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 10
+mul y x
+add z y
+
+-- first
+
+w = digit
+
+x = if (z `mod` 26 - 14) == w then 0 else 1
+z' = 0 * (25 * x + 1) + x*(w + 13)
+
+c1 = -14
+c2 = 13
+x = if (z `mod` 26 + c1) == w then 0 else 1
+z' = 0 * (25 * x + 1) + x*(w + c2)
+
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 15
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 15
+mul y x
+add z y
+
+so... x = 1
+z' = w + 15
+-- seconds
+
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 15
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 10
+mul y x
+add z y
+
+-- 4th
+
+c1 = -14
+c2 = 13
+x = if (z `mod` 26 + c1) == w then 0 else 1
+z' = z * (25 * x + 1) + x*(w + c2)
+
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 13
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 16
+mul y x
+add z y
+
+-- 5
+
+c1 = -12
+c2 = 12
+x = if (z `mod` 26 + c1) == w then 0 else 1
+z' = (z `div` 26) * (25 * x + 1) + x*(w + c2)
+
+if z `mod` 26 == 12 + w then 0 else 1
+[(j,length $ filter (\i -> i `mod` 26 - 12 == j) (map stateZ res)) | j <- [1..9]]
+actually the x == 0 seems like a failure case, so...
+
+
+mul x 0
+add x z
+mod x 26
+div z 26
+add x -12
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 12
+mul y x
+add z y
