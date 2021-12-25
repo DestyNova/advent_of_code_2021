@@ -1,4 +1,4 @@
-# Advent of Code 2021
+# 🎄 Advent of Code 2021 🎄
 
 A collection of solutions for the [Advent of Code 2021](https://adventofcode.com/2021/) programming puzzles. I'll probably attempt most of these in Haskell since I'm still quite noobish and would like to start using it for practical projects. But I might add more languages later since the puzzles are great for getting comfortable with new programming languages. I'd highly recommend trying the challenges out if you haven't already.
 
@@ -10,15 +10,15 @@ Feel free to check out my [2020 repo](https://github.com/DestyNova/advent_of_cod
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Haskell                         53            670            115           2605
-Markdown                        25            229              0            411
+Haskell                         54            684            115           2667
+Markdown                        26            243              0            433
 Rust                             1             11              0             69
-Prolog                           1             21              1             44
+Prolog                           1             19              1             41
 Python                           1             11              0             37
 Bourne Shell                     3              1              2              6
 TOML                             1              2              1              5
 -------------------------------------------------------------------------------
-SUM:                            85            945            119           3177
+SUM:                            87            971            119           3258
 -------------------------------------------------------------------------------
 ```
 
@@ -48,3 +48,4 @@ SUM:                            85            945            119           3177
 * Day 22: [Reactor Reboot](https://github.com/DestyNova/advent_of_code_2021/blob/main/day22/retro.md)
 * Day 23: [Amphipod](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/retro.md)
 * Day 24: [Arithmetic Logic Unit](https://github.com/DestyNova/advent_of_code_2021/blob/main/day24/retro.md)
+* Day 25: [Sea Cucumbers](https://github.com/DestyNova/advent_of_code_2021/blob/main/day25/retro.md)
