@@ -1,5 +1,5 @@
 # Day 22: [Reactor Reboot](https://adventofcode.com/2021/day/22)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day22/Part1.hs) (00:50:40, rank 3451)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day22/Part2.hs) (03:27:24, rank 2138)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day22/Part1.hs) (00:50:40, rank 3451), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day22/Part2.hs) (03:27:24, rank 2138)*
 
 Very cool puzzle that got me thinking hard about spatial relationships between cubes. A nice throwback to Conway Cubes, although not enough overlap with that puzzle that I could lift the code I wrote last year.
 

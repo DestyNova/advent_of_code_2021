@@ -1,5 +1,5 @@
 # Day 19: [Beacon Scanner](https://adventofcode.com/2021/day/19)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day19/Part1.hs) (10:32:56, rank 4356)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day19/Part2.hs) (10:51:54, rank 4218)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day19/Part1.hs) (10:32:56, rank 4356), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day19/Part2.hs) (10:51:54, rank 4218)*
 
 Ah, the true descent into madness begins.
 

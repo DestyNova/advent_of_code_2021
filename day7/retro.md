@@ -1,5 +1,5 @@
 # Day 4: [The Treachery of Whales](https://adventofcode.com/2021/day/7)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day7/Part1.hs) (xx:xx:xx, rank ???? while the stats are disabled), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day7/Part2.hs) (xx:xx:xx, rank ????)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day7/Part1.hs) (01:11:37, rank 7001), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day7/Part2.hs) (01:20:23, rank 5952)*
 
 I'm really enjoying the ludicrous storyline that goes along with these puzzles. This time, we had to help a swarm of submarine-piloting crabs get to the optimal location to detonate a hole in the seafloor above a hidden cave, taking us to safety from a whale that's about to eat us. Yesssss!
 

@@ -1,5 +1,5 @@
 # Day 17: [Trick Shot](https://adventofcode.com/2021/day/17)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day17/Part1.hs) (02:15:58, rank 6580)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day17/Part2.hs) (03:02:25, rank 6672)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day17/Part1.hs) (02:15:58, rank 6580), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day17/Part2.hs) (03:02:25, rank 6672)*
 
 Not sure what happened here. Both parts were pretty simple in retrospect, but I got really confused at the beginning and went down the wrong path.
 

@@ -1,5 +1,5 @@
 # Day 11: [Dumbo Octopus](https://adventofcode.com/2021/day/11)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day11/Part1.hs) (04:04:16, rank 12437)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day11/Part2.hs) (04:08:57, rank 12265))*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day11/Part1.hs) (04:04:16, rank 12437), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day11/Part2.hs) (04:08:57, rank 12265))*
 
 A disastrous affair today. This is the first of the challenges where I came very close to just giving up. I'm really inclined to stay the hell away from the State monad unless a very simple and clearly necessary situation arises, like one of the crab cups puzzles last year.
 

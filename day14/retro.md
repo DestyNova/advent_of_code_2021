@@ -1,5 +1,5 @@
 # Day 14: [Extended Polymerization](https://adventofcode.com/2021/day/14)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day14/Part1.hs) (00:30:02, rank 5210)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day13/Part2.hs) (01:39:46, rank 4873)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day14/Part1.hs) (00:30:02, rank 5210), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day13/Part2.hs) (01:39:46, rank 4873)*
 
 ## Part 1
 

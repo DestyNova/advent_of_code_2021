@@ -1,5 +1,5 @@
 # Day 10: [Syntax Scoring](https://adventofcode.com/2021/day/10)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day10/Part1.hs) (00:16:26, rank 3531)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day10/Part2.hs) (00:25:17, rank 2757))*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day10/Part1.hs) (00:16:26, rank 3531), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day10/Part2.hs) (00:25:17, rank 2757))*
 
 Bit of a change of pace here with a puzzle that demanded a straightforward stack solution. This one was easier than previous days.
 

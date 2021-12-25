@@ -1,5 +1,5 @@
 # Day 23: [Amphipod](https://adventofcode.com/2021/day/23)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/Part1.hs) (06:05:52, rank 4527)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/Part2.hs) (15:25:39, rank 5111)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/Part1.hs) (06:05:52, rank 4527), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/Part2.hs) (15:25:39, rank 5111)*
 
 A new record in exasperation and desparation.
 

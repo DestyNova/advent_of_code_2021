@@ -1,5 +1,5 @@
 # Day 16: [Packet Decoder](https://adventofcode.com/2021/day/16)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day16/Part1.hs) (01:44:57, rank 3581)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day16/Part2.hs) (03:19:48, 4879)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day16/Part1.hs) (01:44:57, rank 3581), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day16/Part2.hs) (03:19:48, 4879)*
 
 Today's puzzle was reminiscent of variable length encoding protocols, like parsing TCP headers or serialisation formats like MsgPack or Protobufs. Good puzzle but very frustrating to debug in Haskell due to its lazy evaluation, which is usually one of the coolest features of the language, but when stepping through thousands of lines of `Debug.Trace` output it's hard to know what happens when.
 

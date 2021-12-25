@@ -1,5 +1,5 @@
 # Day 8: [Seven Segment Search](https://adventofcode.com/2021/day/8)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day8/Part1.hs) (00:21:38, rank 6191), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day8/Part2.hs) (01:44:13, rank 5065))*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day8/Part1.hs) (00:21:38, rank 6191), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day8/Part2.hs) (01:44:13, rank 5065)*
 
 Another cool puzzle, this time involving a jumbled 7-segment display we had to decode. Reminiscent of the monster jigsaw puzzle from last year but not quite as mindmelting.
 
