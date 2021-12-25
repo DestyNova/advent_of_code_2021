@@ -1,5 +1,5 @@
 # Day 21: [Dirac Dice](https://adventofcode.com/2021/day/21)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day21/Part1.hs) (00:19:31, rank 2023)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day21/Part2.hs) (03:22:13, rank 3933)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day21/Part1.hs) (00:19:31, rank 2023), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day21/Part2.hs) (03:22:13, rank 3933)*
 
 Dynamic programming? Dynamic programming.
 

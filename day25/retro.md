@@ -1,5 +1,5 @@
 # Day 25: [Sea Cucumbers](https://adventofcode.com/2021/day/25)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day25/Part1.hs) (01:45:19, rank 3238)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day25/Part2.hs) (01:46:09, rank 2248)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day25/Part1.hs) (01:45:19, rank 3238), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day25/Part2.hs) (01:46:09, rank 2248)*
 
 An easy one to close another thoroughly enjoyable and mind-expanding Advent of Code!
 

@@ -1,5 +1,5 @@
 # Day 9: [Smoke Basin](https://adventofcode.com/2021/day/9)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day9/Part1.hs) (00:22:29, rank 5275)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day9/Part2.hs) (00:58:06, rank 4761)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day9/Part1.hs) (00:22:29, rank 5275), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day9/Part2.hs) (00:58:06, rank 4761)*
 
 Last night was another late one, so I started this after 3 hours of sleep but actually felt fine. I must be acclimatising to this routine, when usually I'll sleep a bit longer if I'm tired. It'll probably hit me soon...
 

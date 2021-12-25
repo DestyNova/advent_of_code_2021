@@ -1,5 +1,5 @@
 # Day 15: [Chiton](https://adventofcode.com/2021/day/15)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day15/Part1.hs) (01:41:05, rank 5572)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day15/Part2.hs) (05:42:08, rank 9008)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day15/Part1.hs) (01:41:05, rank 5572), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day15/Part2.hs) (05:42:08, rank 9008)*
 
 aka Djikstra's Cave
 

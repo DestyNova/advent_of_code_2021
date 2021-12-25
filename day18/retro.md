@@ -1,5 +1,5 @@
 # Day 18: [Snailfish](https://adventofcode.com/2021/day/18)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day18/Part1.hs) (02:32:58, rank 2057)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day18/Part2.hs) (02:55:42, rank 2198)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day18/Part1.hs) (02:32:58, rank 2057), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day18/Part2.hs) (02:55:42, rank 2198)*
 
 ## Part 1
 

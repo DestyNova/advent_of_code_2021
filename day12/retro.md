@@ -1,5 +1,5 @@
 # Day 12: [Passage Pathing](https://adventofcode.com/2021/day/12)
-*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day12/Part1.hs) (00:33:03, rank 2992)), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day12/Part2.hs) (01:06:17, rank 3733)*
+*Haskell: [Part 1](https://github.com/DestyNova/advent_of_code_2021/blob/main/day12/Part1.hs) (00:33:03, rank 2992), [Part 2](https://github.com/DestyNova/advent_of_code_2021/blob/main/day12/Part2.hs) (01:06:17, rank 3733)*
 
 A nice graph-based puzzle that was solvable with DFS.
 
