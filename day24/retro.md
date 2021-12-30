@@ -36,6 +36,19 @@ I have to say I'm really impressed by how easy and clear it is to express relati
 
 I'll probably go back and try solving some of the previous problems with Picat -- the best resource I've found so far for example Picat programs (this is what I look for when trying to use a new tool) seems to be [Hakan Kjellerstrand's page](http://hakank.org/picat) (which curiously, just like the Picat homepage, doesn't support HTTPS). The built-in "tabling" support looks really useful for DP problems, and allows specifying table predicates that restrict the kinds of values that are memoised. So that's pretty neat. I suspect that parsing complex input is more of a hassle compared to Parsec in Haskell but hey.
 
+**Update 2021-12-29**
+
+After chatting with Hakan Kjellerstrand about another AoC problem, he forked my Picat solution for the day 24 problem and made some tiny improvements that massively improved the performance of the `sat` solver and, more importantly, allowed the `cp` solver to work effectively. So effectively in fact that it solves part 1 now in 2.3 seconds and part 2 in 0.19 seconds. That's an incredible speed boost!
+
+I've updated my version with the change:
+
+```prolog
+Zs = [Z1,Z2,Z3,Z4,Z5,Z6,Z7,Z8,Z9,Z10,Z11,Z12,Z13,Z14],
+Zs :: 0..2**32,
+```
+
+Yep, that's all that was needed to speed this up by a factor of about 400! Hakan employed one or two other tricks to increase the performance by another factor of 10 or 20, but I'll leave them out of this version. Again, I'm really impressed by Picat and its built-in solvers.
+
 ## Reflections
 
 Even though I've been trying to do all these challenges in Haskell, sometimes you should cut your losses and try something else, especially if your health or family is suffering. At least now I have a bit more intuition about when to rely on a dedicated solver rather than trying to brute force the problem or continue analysing it indefinitely.
