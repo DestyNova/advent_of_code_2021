@@ -3,7 +3,6 @@ module Main where
 -- Day 15 part 2 using immutable Data.Map and minimumBy over gigantic lists that
 -- are generated and discarded at each step. Don't do it like this.
 
-import Text.Parsec
 import Data.List (minimumBy, transpose, (\\))
 import qualified Data.Map as M
 import Data.Map (Map, (!))

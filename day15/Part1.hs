@@ -1,6 +1,5 @@
 module Main where
 
-import Text.Parsec
 import Debug.Trace (trace)
 import Data.List (minimumBy, (\\))
 import qualified Data.Map as M
