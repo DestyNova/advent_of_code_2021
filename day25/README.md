@@ -20,11 +20,11 @@ No part 2, instead, a well earned cup of tea.
 
 ## Reflections
 
-This year felt harder than the 2020 round, and I'm not sure if that's me being a year older or sleep deprived, or if there was a difficulty boost. Last year I was almost defeated by the [Jurassic Jigsaw](https://github.com/DestyNova/advent_of_code_2020/blob/main/day20/retro.md) puzzle, and this year the [Beacon Scanner](https://github.com/DestyNova/advent_of_code_2021/blob/main/day19/retro.md), [Amphipod](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/retro.md) and [Arithmetic Logic Unit](https://github.com/DestyNova/advent_of_code_2021/blob/main/day24/retro.md) puzzles came even closer.
+This year felt harder than the 2020 round, and I'm not sure if that's me being a year older or sleep deprived, or if there was a difficulty boost. Last year I was almost defeated by the [Jurassic Jigsaw](https://github.com/DestyNova/advent_of_code_2020/blob/main/day20/retro.md) puzzle, and this year the [Beacon Scanner](https://github.com/DestyNova/advent_of_code_2021/blob/main/day19/README.md), [Amphipod](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/README.md) and [Arithmetic Logic Unit](https://github.com/DestyNova/advent_of_code_2021/blob/main/day24/README.md) puzzles came even closer.
 
 Apart from generally improving my problem-solving skills (I hope), I got much more familiar with some important techniques and tactics, such as:
 
-* Dijkstra's algorithm. This came in really handy in the [Chiton](https://github.com/DestyNova/advent_of_code_2021/blob/main/day15/retro.md) puzzle for traversing the map, and for [Amphipod](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/retro.md) for finding an optimal plan in a relatively large state space.
+* Dijkstra's algorithm. This came in really handy in the [Chiton](https://github.com/DestyNova/advent_of_code_2021/blob/main/day15/README.md) puzzle for traversing the map, and for [Amphipod](https://github.com/DestyNova/advent_of_code_2021/blob/main/day23/README.md) for finding an optimal plan in a relatively large state space.
 * Dynamic programming in general, and a few ways to apply it in situations where it's awkward. For example, in Haskell:
     * If the index is an integer, you can use arrays and maybe mutable `STUArray` for a large speed boost.
     * If not, you might be able to map the state into an integer index (I think this is what [Zobrist hashing](https://en.wikipedia.org/wiki/Zobrist_hashing) is about, although surely collisions would be a problem since you're not going to actually store 2^64 values -- in that case the array might need to store a hashmap or list of key/value pairs, i.e. linear chaining)
