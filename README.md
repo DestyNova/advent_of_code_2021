@@ -8,22 +8,26 @@ A collection of solutions for the [Advent of Code 2021](https://adventofcode.com
 * [2019](https://github.com/destynova/advent_of_code_2019) (unfinished, will resume later...)
 * [2020](https://github.com/destynova/advent_of_code_2020) (mostly Haskell, one or two in Rust, Python and [zz](https://github.com/zetzit/zz)
 
-## Current code stats with [cloc](https://github.com/AlDanial/cloc)
+## Current code stats with [scc](https://github.com/boyter/scc)
 
 ```
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Haskell                         54            684            115           2667
-Markdown                        26            243              0            433
-Rust                             1             11              0             69
-Prolog                           1             19              1             41
-Python                           1             11              0             37
-Bourne Shell                     3              1              2              6
-TOML                             1              2              1              5
--------------------------------------------------------------------------------
-SUM:                            87            971            119           3258
--------------------------------------------------------------------------------
+───────────────────────────────────────────────────────────────────────────────
+Language                     Files       Lines     Blanks    Comments      Code
+───────────────────────────────────────────────────────────────────────────────
+Plain Text                      58        9149        194           0      8955
+Haskell                         54        3463        684         115      2664
+Markdown                        26         699        249           0       450
+Shell                            3           9          1           3         5
+License                          1          21          5           0        16
+Picat                            1          65         20           2        43
+Python                           1          48         11           0        37
+Rust                             1          80         11           0        69
+TOML                             1           8          2           1         5
+───────────────────────────────────────────────────────────────────────────────
+Total                          146       13542       1177         121     12244
+───────────────────────────────────────────────────────────────────────────────
+Processed 366050 bytes, 0.366 megabytes (SI)
+───────────────────────────────────────────────────────────────────────────────
 ```
 
 ## Retrospectives
