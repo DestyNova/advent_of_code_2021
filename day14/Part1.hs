@@ -21,7 +21,7 @@ solve n template rules = solve (n-1) (solve' template rules []) rules
 
 solve' :: String -> Rules -> String -> String
 solve' [] rules acc = reverse $ tail acc
-solve' (x:y:xs) rules [] = solve' (y:xs) rules (y:(rules ! [x,y]):x:[])
+solve' (x:y:xs) rules [] = solve' (y:xs) rules [y, (rules ! [x, y]), x]
 solve' (x:y:xs) rules acc = solve' (y:xs) rules (y:(rules ! [x,y]):acc)
 solve' [x] rules acc = solve' [] rules (x:acc)
 
