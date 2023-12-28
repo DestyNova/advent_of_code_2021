@@ -8,7 +8,7 @@ import qualified Data.Map as M
 import Data.Map (Map, (!))
 
 type Coord = (Int,Int)
-type Weights = Array (Int,Int) Int
+type Weights = Map (Int,Int) Int
 
 main = do
   inp <- lines <$> readFile "input.txt"
@@ -30,19 +30,19 @@ incAll :: [[Int]] -> Int -> [[Int]]
 incAll xs n = [[if r > 9 then r - 9 else r | i <- rs, let r = i + n] | rs <- xs]
 
 solve :: Weights -> Int -> Int -> Weights
-solve ws w h = solve' ws (M.insert (0,0) 0 mempty) (M.keys ws) w h
+solve ws = solve' ws (M.insert (0,0) 0 mempty) (M.keys ws)
 
 solve' ws ds [] _ _ = ds
 solve' ws ds q w h = solve' ws ds' q' w h
   where (v,q') = getClosest ds q
         ns = getNeighbours v w h
-        newDs = map (\u -> let ud = (getWs ws u) + (getDs ds v)
+        newDs = map (\u -> let ud = getWs ws u + getDs ds v
                                in case M.lookup u ds of
                                        Nothing -> ud
                                        Just d -> min ud d) ns
         ds' = foldr addToDists ds (zip newDs ns)
 
-addToDists (d,u) m = M.insert u d m
+addToDists (d,u) = M.insert u d
 
 getWs ws u = case M.lookup u ws of
                   Nothing -> error $ "Couldn't find " ++ show u ++ " in weights."
@@ -57,7 +57,7 @@ getClosest ds q = (v,q')
   where q' = q \\ [v]
         (_,v) = minimumBy (\(a,_) (b,_) -> compare a b) dists
         dists = map (\u -> (ds ! u, u)) knownQs
-        knownQs = filter (\u -> M.member u ds) q
+        knownQs = filter (`M.member` ds) q
 
 getNeighbours (i,j) w h = [(a,b) | (a,b) <- [(i-1,j),(i,j-1),(i+1,j),(i,j+1)],
                                    a >= 0, a < w,
