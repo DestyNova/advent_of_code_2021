@@ -1,6 +1,6 @@
 module Main where
 
--- Day 15 part 2 using mutable arrays to implement Djikstra's pathing
+-- Day 15 part 2 using mutable arrays to implement Dijkstra's pathing
 -- algorithm with sets as a priority queue.
 
 import Text.Parsec

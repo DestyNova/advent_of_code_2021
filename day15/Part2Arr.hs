@@ -1,6 +1,6 @@
 module Main where
 
--- Day 15 part 2 using immutable arrays to implement Djikstra's pathing
+-- Day 15 part 2 using immutable arrays to implement Dijkstra's pathing
 -- algorithm with leftist heaps as a priority queue. Note that I just
 -- allowed the heaps to be leaky by adding a new duplicate node with a
 -- lower key (distance) when a shorter path is found. That's fine in this
